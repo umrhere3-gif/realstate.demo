@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NESTORA Realty — practical property search, buying, selling and renting. Demo concept by AGdevlopers.">
+<title>NESTORA Realty — Find a place that fits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-bar">DEMO CONCEPT <span>·</span> WEBSITE CONCEPT BY AGdevlopers <span>·</span> FOR PRESENTATION PURPOSES</div>
+
+<header class="nav">
+  <a class="logo" href="#home">NESTORA <small>REALTY</small></a>
+  <nav>
+    <a href="#properties">PROPERTIES</a>
+    <a href="#services">SERVICES</a>
+    <a href="#areas">AREAS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <a class="list-btn" href="#contact">LIST YOUR PROPERTY</a>
+  <button class="hamb" aria-label="Open menu">☰</button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow">PROPERTY CONSULTANTS · PUNE</p>
+    <h1>Find a place<br>that fits <em>your life.</em></h1>
+    <p class="hero-copy">Homes, rentals and investment properties across Pune — with local guidance from people who know the market.</p>
+
+    <div class="search-box">
+      <div class="search-tabs">
+        <button class="tab active" data-mode="buy">BUY</button>
+        <button class="tab" data-mode="rent">RENT</button>
+        <button class="tab" data-mode="sell">SELL</button>
+      </div>
+      <div class="search-fields">
+        <label><span>LOCATION</span><input id="locationInput" placeholder="Search locality or project"></label>
+        <label><span>PROPERTY TYPE</span><select id="typeSelect"><option value="all">Any type</option><option>Apartment</option><option>Villa</option><option>Plot</option><option>Office</option><option>Shop</option></select></label>
+        <label><span>BUDGET</span><select id="budgetSelect"><option value="all">Any budget</option><option value="50">Under ₹50 L</option><option value="100">₹50 L – ₹1 Cr</option><option value="200">₹1 – ₹2 Cr</option><option value="999">₹2 Cr+</option></select></label>
+        <button class="search-btn" id="searchBtn">SEARCH PROPERTIES <b>↗</b></button>
+      </div>
+      <div class="popular">POPULAR: <button data-place="Hinjewadi">Hinjewadi</button><button data-place="Baner">Baner</button><button data-place="Wakad">Wakad</button><button data-place="Kharadi">Kharadi</button></div>
+    </div>
+  </div>
+  <div class="hero-bottom"><span>01 / PROPERTY SEARCH</span><span>BUY · RENT · SELL</span></div>
+</section>
+
+<section class="trust">
+  <div><strong>350+</strong><span>PROPERTIES<br>LISTED</span></div>
+  <div><strong>12+</strong><span>LOCALITIES<br>COVERED</span></div>
+  <div><strong>8 YRS</strong><span>LOCAL MARKET<br>EXPERIENCE</span></div>
+  <div><strong>4.9/5</strong><span>CLIENT<br>RATING</span></div>
+</section>
+
+<section class="properties" id="properties">
+  <div class="section-head">
+    <div><p class="eyebrow dark">02 / FEATURED PROPERTIES</p><h2>Good options.<br><em>Clear information.</em></h2></div>
+    <div class="view-controls"><button class="view active">GRID</button><button class="view">MAP</button></div>
+  </div>
+
+  <div class="results-note" id="resultsNote">Showing our hand-picked properties</div>
+  <div class="property-grid" id="propertyGrid">
+    <article class="card" data-location="Hinjewadi" data-type="Apartment" data-price="85" data-mode="buy">
+      <a class="card-img img1" href="#contact"><span class="badge">VERIFIED</span><span class="save">♡</span></a>
+      <div class="card-body"><div class="card-top"><small>FOR SALE · READY TO MOVE</small><strong>₹85 L</strong></div><h3>3 BHK in Blue Ridge</h3><p>Hinjewadi, Pune</p><div class="meta"><span>3 Beds</span><span>2 Baths</span><span>1,420 sq.ft.</span></div><a href="#contact" class="details">VIEW DETAILS →</a></div>
+    </article>
+
+    <article class="card" data-location="Baner" data-type="Apartment" data-price="125" data-mode="buy">
+      <a class="card-img img2" href="#contact"><span class="badge">FEATURED</span><span class="save">♡</span></a>
+      <div class="card-body"><div class="card-top"><small>FOR SALE · NEW PROJECT</small><strong>₹1.25 Cr</strong></div><h3>2 BHK near Balewadi High Street</h3><p>Baner, Pune</p><div class="meta"><span>2 Beds</span><span>2 Baths</span><span>1,180 sq.ft.</span></div><a href="#contact" class="details">VIEW DETAILS →</a></div>
+    </article>
+
+    <article class="card" data-location="Wakad" data-type="Apartment" data-price="28" data-mode="rent">
+      <a class="card-img img3" href="#contact"><span class="badge">RENT</span><span class="save">♡</span></a>
+      <div class="card-body"><div class="card-top"><small>FOR RENT · FURNISHED</small><strong>₹28K/mo</strong></div><h3>2 BHK Family Apartment</h3><p>Wakad, Pune</p><div class="meta"><span>2 Beds</span><span>2 Baths</span><span>1,050 sq.ft.</span></div><a href="#contact" class="details">VIEW DETAILS →</a></div>
+    </article>
+
+    <article class="card" data-location="Kharadi" data-type="Apartment" data-price="145" data-mode="buy">
+      <a class="card-img img4" href="#contact"><span class="badge">VERIFIED</span><span class="save">♡</span></a>
+      <div class="card-body"><div class="card-top"><small>FOR SALE · RESALE</small><strong>₹1.45 Cr</strong></div><h3>3 BHK by EON IT Park</h3><p>Kharadi, Pune</p><div class="meta"><span>3 Beds</span><span>3 Baths</span><span>1,610 sq.ft.</span></div><a href="#contact" class="details">VIEW DETAILS →</a></div>
+    </article>
+
+    <article class="card" data-location="Pashan" data-type="Villa" data-price="225" data-mode="buy">
+      <a class="card-img img5" href="#contact"><span class="badge">NEW</span><span class="save">♡</span></a>
+      <div class="card-body"><div class="card-top"><small>FOR SALE · VILLA</small><strong>₹2.25 Cr</strong></div><h3>Independent 4 BHK Villa</h3><p>Pashan, Pune</p><div class="meta"><span>4 Beds</span><span>4 Baths</span><span>2,800 sq.ft.</span></div><a href="#contact" class="details">VIEW DETAILS →</a></div>
+    </article>
+
+    <article class="card" data-location="Viman Nagar" data-type="Office" data-price="65" data-mode="rent">
+      <a class="card-img img6" href="#contact"><span class="badge">COMMERCIAL</span><span class="save">♡</span></a>
+      <div class="card-body"><div class="card-top"><small>FOR RENT · OFFICE</small><strong>₹65K/mo</strong></div><h3>Plug & Play Office</h3><p>Viman Nagar, Pune</p><div class="meta"><span>20 Seats</span><span>2 Cabins</span><span>1,450 sq.ft.</span></div><a href="#contact" class="details">VIEW DETAILS →</a></div>
+    </article>
+  </div>
+  <div class="no-results" id="noResults">No matching properties in this demo. <a href="#contact">Ask us to find one →</a></div>
+  <div class="center"><a class="outline-btn" href="#contact">VIEW ALL PROPERTIES</a></div>
+</section>
+
+<section class="split-callout" id="areas">
+  <div class="area-image"></div>
+  <div class="area-copy">
+    <p class="eyebrow dark">03 / LOCAL KNOWLEDGE</p>
+    <h2>Don't just find<br>a home. Find the<br><em>right area.</em></h2>
+    <p>Property value is about more than the building. We help you understand commute, schools, connectivity, upcoming development and what you're really paying for.</p>
+    <div class="area-links">
+      <a href="#contact"><span>01</span><strong>BANER · BALEWADI</strong><b>→</b></a>
+      <a href="#contact"><span>02</span><strong>HINJEWADI · WAKAD</strong><b>→</b></a>
+      <a href="#contact"><span>03</span><strong>KHARADI · VIMAN NAGAR</strong><b>→</b></a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="services-intro"><p class="eyebrow dark">04 / HOW WE HELP</p><h2>More than<br><em>property listings.</em></h2><p>Whether you're buying your first home, moving into a rental or selling an investment, we handle the complicated parts.</p></div>
+  <div class="service-grid">
+    <a href="#contact"><span>01</span><h3>BUY A HOME</h3><p>Shortlist properties that actually fit your budget, location and lifestyle.</p><b>→</b></a>
+    <a href="#contact"><span>02</span><h3>RENT A PROPERTY</h3><p>Find practical rentals with transparent terms and local support.</p><b>→</b></a>
+    <a href="#contact"><span>03</span><h3>SELL YOUR PROPERTY</h3><p>Get the right market positioning, qualified enquiries and smoother closure.</p><b>→</b></a>
+    <a href="#contact"><span>04</span><h3>INVEST SMARTER</h3><p>Compare localities, rental potential and long-term opportunities before you commit.</p><b>→</b></a>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="why-copy"><p class="eyebrow dark">05 / WHY WORK WITH US</p><h2>Real advice.<br><em>No pressure.</em></h2><p>Buying property is a big decision. Our job isn't to push the most expensive option — it's to help you make a decision you'll still feel good about five years from now.</p><a class="dark-btn" href="#contact">TALK TO AN ADVISOR →</a></div>
+  <div class="why-points">
+    <div><span>01</span><h3>LOCAL EXPERTISE</h3><p>We know the neighbourhoods, projects and price ranges we work in.</p></div>
+    <div><span>02</span><h3>SHORTLISTED OPTIONS</h3><p>Less scrolling. More relevant properties based on what you actually need.</p></div>
+    <div><span>03</span><h3>TRANSPARENT GUIDANCE</h3><p>Clear pricing, practical advice and no unnecessary sales pressure.</p></div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="steps-head"><p class="eyebrow">06 / THE SIMPLE WAY</p><h2>From search<br>to <em>signed.</em></h2></div>
+  <div class="step-list">
+    <div><span>01</span><div><h3>TELL US WHAT YOU NEED</h3><p>Budget, location, property type, timeline — even the things you don't know yet.</p></div></div>
+    <div><span>02</span><div><h3>GET A SHORTLIST</h3><p>We narrow down the options and explain why each one is worth your time.</p></div></div>
+    <div><span>03</span><div><h3>VISIT & COMPARE</h3><p>Schedule site visits and compare the properties with a clear head.</p></div></div>
+    <div><span>04</span><div><h3>CLOSE WITH CONFIDENCE</h3><p>We stay involved through negotiation and the next steps until the deal is done.</p></div></div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="cta-bg"></div><div class="cta-shade"></div>
+  <div class="cta-content">
+    <p class="eyebrow">07 / LET'S FIND YOUR NEXT MOVE</p>
+    <h2>Tell us what<br>you're <em>looking for.</em></h2>
+    <p>Buying, renting or selling? Start with a quick conversation. No commitment.</p>
+    <div class="cta-buttons">
+      <a class="cream-btn" href="https://wa.me/919307983153?text=Hi%20AGdevlopers%2C%20I%27m%20interested%20in%20the%20real%20estate%20website%20demo.">WHATSAPP US ↗</a>
+      <a class="line-btn" href="tel:+919307983153">CALL +91 9307983153</a>
+      <a class="line-btn" href="mailto:iamumk03@gmail.com?subject=Real%20Estate%20Website%20Demo">EMAIL US</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand">NESTORA <small>REALTY · PUNE</small></div>
+  <div class="footer-links"><a href="tel:+919307983153">+91 9307983153</a><a href="mailto:iamumk03@gmail.com">iamumk03@gmail.com</a><a href="https://wa.me/919307983153" target="_blank">WHATSAPP ↗</a></div>
+  <div class="footer-note">DEMO CONCEPT<br>Designed &amp; Developed by <strong>AGdevlopers</strong></div>
+</footer>
+<a class="floating-wa" target="_blank" href="https://wa.me/919307983153?text=Hi%20AGdevlopers%2C%20I%27d%20like%20to%20know%20more%20about%20the%20real%20estate%20demo.">WA</a>
+
+<script>
+const tabs=[...document.querySelectorAll('.tab')];
+const cards=[...document.querySelectorAll('.card')];
+const locationInput=document.getElementById('locationInput');
+const typeSelect=document.getElementById('typeSelect');
+const budgetSelect=document.getElementById('budgetSelect');
+const note=document.getElementById('resultsNote');
+const none=document.getElementById('noResults');
+
+let mode='buy';
+
+function filterCards(){
+  const q=locationInput.value.trim().toLowerCase();
+  const type=typeSelect.value;
+  const budget=budgetSelect.value;
+  let shown=0;
+  cards.forEach(card=>{
+    const loc=card.dataset.location.toLowerCase();
+    const cardType=card.dataset.type;
+    const price=Number(card.dataset.price);
+    const matchesMode=mode==='sell' ? true : card.dataset.mode===mode;
+    const matchesQ=!q || loc.includes(q) || card.innerText.toLowerCase().includes(q);
+    const matchesType=type==='all' || cardType===type;
+    let matchesBudget=true;
+    if(budget==='50') matchesBudget=price<50;
+    if(budget==='100') matchesBudget=price>=50 && price<=100;
+    if(budget==='200') matchesBudget=price>100 && price<=200;
+    if(budget==='999') matchesBudget=price>200;
+    const show=matchesMode && matchesQ && matchesType && matchesBudget;
+    card.style.display=show?'block':'none';
+    if(show) shown++;
+  });
+  note.textContent=`${shown} ${shown===1?'property':'properties'} matching your search`;
+  none.style.display=shown?'none':'block';
+  document.getElementById('properties').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+tabs.forEach(t=>t.addEventListener('click',()=>{
+  tabs.forEach(x=>x.classList.remove('active')); t.classList.add('active');
+  mode=t.dataset.mode;
+  if(mode==='sell'){
+    note.textContent='Selling a property? Tell us what you own and we’ll help position it.';
+    cards.forEach(c=>c.style.display='none'); none.style.display='block';
+  } else filterCards();
+}));
+document.getElementById('searchBtn').addEventListener('click',filterCards);
+[locationInput,typeSelect,budgetSelect].forEach(x=>x.addEventListener('keydown',e=>{if(e.key==='Enter')filterCards()}));
+document.querySelectorAll('.popular button').forEach(b=>b.addEventListener('click',()=>{
+  locationInput.value=b.dataset.place; mode='buy';
+  tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode==='buy')); filterCards();
+}));
+document.querySelectorAll('.save').forEach(s=>s.addEventListener('click',e=>{
+  e.preventDefault(); s.textContent=s.textContent==='♡'?'♥':'♡';
+}));
+document.querySelector('.hamb').addEventListener('click',()=>document.querySelector('nav').classList.toggle('show'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('show')));
+</script>
+</body>
+</html>
